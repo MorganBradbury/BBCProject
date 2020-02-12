@@ -1,0 +1,40 @@
+﻿@model IEnumerable<bbc_proj.Models.ParlimentData>
+@{
+    ViewBag.Title = "Home";
+}
+
+@*Below is the HTML / Razor view which generates a table. This is then sent to the method in the JS file which turns it into a sortable table*@
+@if (Model != null)
+{
+    <button id="reset_datatable" onclick="location.reload()" type="button" class="btn btn-primary">Reload data</button>
+    <button class="btn btn-primary">Filter</button>
+    <button class="btn btn-primary" onclick="dataPayload()">Send Data Payload</button>
+
+    <table id="mp_dataTable" class="table table-striped table-bordered table-sm">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Party</th>
+                <th style="text-align:center">More info</th>
+            </tr>
+        </thead>
+        <tbody>
+            @*Looping through to create the table*@
+            @foreach (var mp in Model)
+            {
+                <tr>
+                    <td>@mp.Name</td>
+                    <td>@mp.Surname</td>
+                    <td>@mp.PartyName</td>
+                    <td style="text-align:center"><button id="@mp.memberId" onclick="returnMPFurtherData(this.id)" data-toggle="modal" data-target="#mp_modal" class="btn-table"><i class="fa-cog fas"></i></button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+<div id="info_body"><p class="info_text">Please select a row to view data</p></div>
+
+

@@ -1,0 +1,109 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family:'Segoe UI' !important;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top:80px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.displaynone{
+    display:none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #f1f1f1;
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.btn{
+    border-radius:0px !important;
+    background-color:#108bdc !important;
+    border:none !important;
+    padding:12px 20px !important;
+}
+
+input {
+    min-height: 30px !important;
+    border: none;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-table{
+    background:none;
+    border:none;
+    font-size:15px;
+}
+
+#mp_dataTable_wrapper a {
+    margin-right:8px;
+}
+
+#mp_dataTable_wrapper {
+    margin-top: 30px;
+}
+
+#info_body {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:23px;
+}
+
+.paginate_button {
+    background-color: #108bdc;
+    color: #fff;
+    border-radius: 0px !important;
+    background-color: #108bdc !important;
+    border: none !important;
+    padding: 12px 20px !important;
+    margin-top:25px;
+}
+
+.dataTables_info{
+    margin-bottom:30px;
+}
+
+.ellipsis{
+    margin-right:7px;
+}
+
+.info_text{
+    font-weight:bold;
+    font-size:16px;
+}
+
+.navbar-brand{
+    float:right
+}
